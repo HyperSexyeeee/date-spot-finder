@@ -1,21 +1,26 @@
-alert("開けたよ！")
-
+// ボタンとメッセージを取得
 const button = document.getElementById("changeButton");
 const message = document.getElementById("message");
 
-const messages = [
-  "素敵なデートスポットが見つかる予感！💓",
-  "今日はカフェ巡りなんてどう？☕",
-  "夜景がきれいな場所に行ってみよう✨",
-  "天気がいいし、ピクニックもいいかも🌸"
-];
-
-const colors = ["#ff1493", "#ff8c00", "#1e90ff", "#32cd32"];
-
+// ボタンがクリックされたときの処理
 button.addEventListener("click", function() {
-  const randomIndex = Math.floor(Math.random() * messages.length);
-  const randomColor = colors[randomIndex];
-  
-  message.textContent = messages[randomIndex];
-  message.style.color = randomColor;
+  message.textContent = "ボタンがクリックされた！";
+  document.body.style.backgroundColor = "lightblue";
+//入力と表示ボタン
+  const showButton = document.getElementById("submitButton");
+  const userInput = document.getElementById("userInput");
+  const output = document.getElementById("output");
+
+ showButton.addEventListener("click", function() {
+  const place = userInput.value.trim();
+
+  if (place === "") {
+    output.textContent = "⚠️ 入力してください！";
+    output.style.color = "red";
+  } else {
+    output.textContent = `あなたが入力したのは: ${place} ですね！`;
+    output.style.color = "#ff1493"; // ピンク色
+  }
+})
 });
+

@@ -1,78 +1,22 @@
 <!DOCTYPE html>
-
-<html  lang="ja">
-    <head>
-        <meta charset="UTF-8">
-
-    <title>Date Spot Finder</title>
-    <style>
-  body {
-    <style>
-  body {
-    background-color: #f0f8ff;
-    font-family: "Segoe UI", sans-serif;
-    text-align: center;
-    padding: 50px;
-  }
-
-  h1 {
-    color: #ff4500;
-    margin-bottom: 20px;
-  }
-
-  p {
-    font-size: 18px;
-    color: #333;
-  }
-
-  input {
-    padding: 10px;
-    border: 2px solid #ccc;
-    border-radius: 8px;
-    width: 250px;
-    margin-right: 10px;
-    font-size: 16px;
-  }
-
-  button {
-    padding: 10px 15px;
-    border: none;
-    border-radius: 8px;
-    background-color: #ff7f50;
-    color: white;
-    cursor: pointer;
-    font-size: 16px;
-  }
-
-  button:hover {
-    background-color: #ff6347;
-  }
-
-  #output {
-    margin-top: 20px;
-    font-weight: bold;
-    color: #ff1493;
-  }
-</style>
- 
-</style>
-
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Date Spot Finder</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<h1 id="message">こんにちは！</h1>
-<button id="changeButton">メッセージを変える</button>
- <input id ="userInput" type="text" placeholder="好きな場所を入力してね">
- <button id="submitButton">表示する！</button>
- <p id="output"></p>
-<script src="script.js"></script>
+  <h1 id="message">こんにちは！</h1>
 
+  <button id="changeButton">メッセージを変える</button>
 
+  <input id="userInput" type="text" placeholder="好きな場所を入力してね">
+  <button id="submitButton">表示する！</button>
+  <p id="output" class="fade-in"></p>
 
+  <button id="spotButton">おすすめスポットを表示！</button>
+  <p id="spotOutput" class="fade-in"></p>
 
-    
-
+  <script src="script.js"></script>
 </body>
 </html>
-
-
-
